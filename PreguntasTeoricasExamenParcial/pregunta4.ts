@@ -7,4 +7,5 @@ const b4 = new Promise((resolve, reject) => {
 })
 
 a4.then(param => console.log(param))
+b4.then(param => console.log(param))
 console.log("c")

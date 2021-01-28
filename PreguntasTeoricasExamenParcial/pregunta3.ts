@@ -5,3 +5,4 @@ Aun asi la funcion forEach se ejecutara y en este caso sacara por pantalla los v
 
 const a2 = [1,2,3,4,5,6]
 const b2 = a2.forEach(e => console.log(e))
+console.log(b2)
