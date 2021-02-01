@@ -33,7 +33,7 @@ setTimeout(() => setTimeout(() => console.log("Cuanto"), 3000), 2000)
 let a = 5
 
 const promesa2 = new Promise((resolve, reject) =>{
-    setTimeout(() => resolve("Promesa resuelta 2"), 2000)
+    setTimeout(() => resolve("Promesa resuelta 2"), 4000)
 })
 
 promesa2.then((text) => {
@@ -41,6 +41,13 @@ promesa2.then((text) => {
 }).catch(() => {
     console.log("Promesa rechazada")
 })
+
+const promesa3 = new Promise((resolve, reject) => {
+    setTimeout(() => resolve("Promesa resuelta 3"), 4000)
+})
+
+const data = await promesa3
+console.log(data)
 
 setTimeout(() => setTimeout(() => console.log("Siguiente promesa resuelta"), 2000), 2000)
 
