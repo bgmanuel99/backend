@@ -1,4 +1,3 @@
-// @ts-ignore
 import { format } from 'https://deno.land/x/date_fns/index.js'; // Libreria de deno para tiempo
  
 interface Story {
